@@ -1,0 +1,83 @@
+Logbook: Project_A-C-E
+
+[08.04.2026] Meeting memo:
+Important Dependencies: (already existing packages)
+- rdkit
+- https://github.com/Vpirova/Symetrie
+
+Software/Script inputs:
+- SMILES (primary input)
+- Suplementary inputs if time available for further developments (e.g. drawing interface, IUPAC names and other designations of molecules)
+
+Software/Script outputs:
+- List of symmetry elements
+- Point group of the molecules
+- Highlight of the symmetry elements on a 3D representation of the molecule
+- Highlight of equivalent atomes in the molecule
+
+General functionning of the program:
+- 3D representation through rdkit tools
+- Computation for the most stable conformation of the molecule
+- Determination of symmetry elements
+- Point group belonging of the molecule
+
+Question for the TAs:
+In what language should the documentation be written ?
+
+Exercices performed during the meeting:
+- Modification of a textuel document .md and publication via GitHub
+- Navigation between different branches
+- Consultation of the historic of the commit with the command git log
+- Restoration of a previous commit with the command git checkout commit-ID file-name.extension
+
+Preparation for the next meeting:
+- Explore the Symetrie repository of Vpirova and get familiar with the available functionnalities
+
+[15.04.2026] Meeting memo :
+Creation of the initial working environment for the project with python 3.10 and rdkit.
+Publication of the environment file on GitHub.
+
+Answers to the previous questions:
+- In what language should the documentation be written ?
+Everything must be in english, both the written documentation and the final oral presentation.
+- What tool do we have to use for the final presentation ?
+Any numerical tool may be used for the preparation of the final presentation.
+
+New question for the TAs:
+- Can we use public code if there is no license associated to it ?
+
+[15.04.2026] C_contribution:
+Test of the symetrie package:
+1. Clone of the repository 
+2. Creation of the working environment and downloading of the listed packages
+
+diff:
+certifi 2026.01.04 instead of 2025.1.31
+fonttools 4.62.1 instead of 4.56.0
+kiwisolver 1.4.9 instead of 1.4.8
+matplotlib 3.10.8 instead of 3.10.1
+numpy 2.2.5 instead of 2.2.3
+packaging 26.0 instead of 24.2 
+pillow 12.1.1 instead of 11.1.0
+pubchempy 1.0.5 instead of 1.0.4
+pyparsing 3.2.5 instead of 3.2.1
+rdkit 2025.09.6 instead of 2024.9.5
+
+3. Test of the functionnalities (focusing on general aspects for the moment, use of main script)
+4. Annotations and remarks on the code
+- A visuel is supposed to be displayed; I cannot see/open it.
+- Doesn't explicitely state the point group of the molecule
+- Very inconvenient input limited to IUPAC names
+- Rudimentary interface that can be improved
+- Wrong identification of the order of the rotation axis C for linear molecules (tested for CO and CO2)
+- Wrong identification of symmetry elements for SF6 (no axis nor planes identified)
+- No identification of the inversion center for CO2
+- Satisfactory outputs for SO2, CH4 and benzene C6H6
+
+5. Redefinition of our project perspectives:
+- Correction of the listed problems from the symmetrie code package
+- Explicit statement of the point group the molecule belong in
+- Make the visualisation of the molecule work and improve it
+
+Current differences between project_ace environment and symetrie environment:
+Missing in project_ace: certifi, matplotlib, pubchempy
