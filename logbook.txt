@@ -31,7 +31,7 @@ Exercices performed during the meeting:
 - Restoration of a previous commit with the command git checkout commit-ID file-name.extension
 
 Preparation for the next meeting:
-- Explore the Symetrie repository of Vpirova and get familiar with the available functionnalities
+- Explore the "Symetrie" repository of Vpirova and get familiar with the available functionnalities
 
 [15.04.2026] Meeting memo :
 Creation of the initial working environment for the project with python 3.10 and rdkit.
@@ -45,6 +45,9 @@ Any numerical tool may be used for the preparation of the final presentation.
 
 New question for the TAs:
 - Can we use public code if there is no license associated to it ?
+
+Preparation for the next meeting:
+- Continuation of the exploration of the functionnalities of the "Symetrie" repository
 
 [15.04.2026] C_contribution:
 Test of the symetrie package:
@@ -65,19 +68,21 @@ rdkit 2025.09.6 instead of 2024.9.5
 
 3. Test of the functionnalities (focusing on general aspects for the moment, use of main script)
 4. Annotations and remarks on the code
-- A visuel is supposed to be displayed; I cannot see/open it.
+- A visual is supposed to be displayed; I cannot see/open it. (The access to the generated file has to be reviewed so that the visual can be displayed)
+- The drawn axes don't correspond to the rotation axes (tested for CH4)
 - Doesn't explicitely state the point group of the molecule
 - Very inconvenient input limited to IUPAC names
 - Rudimentary interface that can be improved
 - Wrong identification of the order of the rotation axis C for linear molecules (tested for CO and CO2)
-- Wrong identification of symmetry elements for SF6 (no axis nor planes identified)
+- Wrong identification of symmetry elements for SF6 (no axes nor planes identified)
 - No identification of the inversion center for CO2
 - Satisfactory outputs for SO2, CH4 and benzene C6H6
 
 5. Redefinition of our project perspectives:
 - Correction of the listed problems from the symmetrie code package
 - Explicit statement of the point group the molecule belong in
-- Make the visualisation of the molecule work and improve it
+- Make the visualisation of the molecule work correctly and improve it
+- Improve the user interface
 
 Current differences between project_ace environment and symetrie environment:
 Missing in project_ace: certifi, matplotlib, pubchempy
