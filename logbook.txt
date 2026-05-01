@@ -157,3 +157,15 @@ User interface:
 - Control on the generated outputs:
     - point group of the molecule
     - visual of the studied molecule with toggle key for each symmetry element highlight option (show/hide)
+
+[29.04.2026] Meeting Memo:
+Quick recap of previous decisions and project objectives
+Choice of the rough sketch of the functionning to be the first alternative
+Establishment of the essential steps for the realisation of the project
+Sorting of ideas for potential supplementary implementations
+Distribution of the tasks to be accomplished
+
+Distribution of the tasks:
+A: xyz file generation
+C: list of symmetry elements generation
+E: User interface and visual considerations (Input/Output)
